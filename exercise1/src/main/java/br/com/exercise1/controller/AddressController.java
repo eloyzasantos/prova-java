@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import br.com.exercise1.exception.InvalidZipcode;
+import br.com.exercise1.model.Address;
 import br.com.exercise1.service.AddressService;
-import exception.InvalidZipcode;
-import model.Address;
 
 @Controller
 public class AddressController {

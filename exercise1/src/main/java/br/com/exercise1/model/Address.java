@@ -1,4 +1,4 @@
-package model;
+package br.com.exercise1.model;
 
 public class Address {
 	

@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>br.com</groupId>
-	<artifactId>exercise1</artifactId>
+	<artifactId>exercise2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>exercise1</name>
+	<name>exercise2</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -33,6 +33,29 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${springframework.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${springframework.version}</version>
+		</dependency>
+
+		<!-- h2 -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.4.194</version>
+		</dependency>
+
 
 		<!-- jackson -->
 		<dependency>
@@ -46,7 +69,7 @@
 			<version>2.4.3</version>
 		</dependency>
 
-		<!-- teste -->
+		<!-- Teste -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -69,6 +92,13 @@
 			<version>3.5</version>
 		</dependency>
 
+		<!-- Hibernate -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.2.8.Final</version>
+		</dependency>
+
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -76,7 +106,7 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>exercise1</finalName>
+		<finalName>exercise2</finalName>
 		<resources>
 			<resource>
 				<directory>src/main/java</directory>

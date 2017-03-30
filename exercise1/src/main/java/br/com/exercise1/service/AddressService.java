@@ -6,9 +6,9 @@ import org.apache.commons.lang3.StringUtils;
 import org.mockito.Mockito;
 import org.springframework.stereotype.Service;
 
+import br.com.exercise1.exception.InvalidZipcode;
+import br.com.exercise1.model.Address;
 import br.com.exercise1.repository.AddressRepository;
-import exception.InvalidZipcode;
-import model.Address;
 
 @Service
 public class AddressService {

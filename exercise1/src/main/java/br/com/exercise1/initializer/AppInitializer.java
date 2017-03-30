@@ -1,4 +1,4 @@
-package br.com.apontador.places.initializer;
+package br.com.exercise1.initializer;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
