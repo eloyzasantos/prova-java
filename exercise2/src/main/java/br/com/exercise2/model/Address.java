@@ -19,7 +19,6 @@ public class Address {
 		this.zipcode = zipcode;
 		this.streetNumber = streetNumber;
 		this.complement = complement;
-		this.zipcode = zipcode;
 	}
 	
 	@Id

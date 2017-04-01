@@ -1,6 +1,10 @@
-package br.com.exercise1.model;
+package br.com.exercise2.model;
 
-public class Error {
+public class ResponseError {
+
+	public ResponseError() {
+		super();
+	}
 
 	private String message;
 
@@ -12,7 +16,7 @@ public class Error {
 		this.message = message;
 	}
 
-	public Error(String message) {
+	public ResponseError(String message) {
 		super();
 		this.message = message;
 	}

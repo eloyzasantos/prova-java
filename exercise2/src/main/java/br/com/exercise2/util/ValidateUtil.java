@@ -11,7 +11,8 @@ public class ValidateUtil {
 				address.getStreetNumber() == null || address.getStreetNumber() == 0 ||
 				address.getZipcode() == null || address.getZipcode().isEmpty() ||
 				address.getCity() == null || address.getCity().isEmpty() ||
-				address.getState() == null || address.getState().isEmpty()) 
+				address.getState() == null || address.getState().isEmpty() ||
+				address.getCountry() == null || address.getCountry().isEmpty()) 
 					throw new InvalidAddress();
 		
 	}

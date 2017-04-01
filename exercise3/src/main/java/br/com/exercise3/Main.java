@@ -2,6 +2,7 @@ package br.com.exercise3;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 import br.com.exercise3.stream.Stream;
 import br.com.exercise3.stream.impl.StreamImpl;
@@ -15,9 +16,21 @@ public class Main
 	protected static final String VOGALS = "aeiou";
 	protected static final String CONSONANTS = "bcdfghjklmnpqrstvwxyz";
 	
+	/**
+	 * First index that is possible has a consonant and vogal before 
+	*/
+	protected static final int FIRST_INDEX = 2;
+	
     public static void main( String[] args )
     {
-        System.out.println(firstChar("AAbBABacafe"));
+    	try {
+    		System.out.println(firstChar("aAbBABacafe"));
+    	} catch (NoSuchElementException ex) {
+    		System.out.println("Element not found.");
+    	} catch (Exception ex) {
+    		System.out.println("Unexpected error.");
+    	}
+        
     }
     
     public static Character firstChar(String input) {
@@ -28,7 +41,7 @@ public class Main
 		while (stream.hasNext()) {
 			Character character = stream.getNext();
 						
-			if (listCharacter.size() >= 2) {
+			if (listCharacter.size() >= FIRST_INDEX) {
 				String textCharacter = String.valueOf(character);
 				
 				if (isVogal(textCharacter) && !isRepeated(listCharacter, character))  {
@@ -47,18 +60,27 @@ public class Main
 			listCharacter.add(character);
 		}
 		
-		return null;
+		throw new NoSuchElementException();
 	}
     
-    protected static boolean isRepeated(List<Character> listCharacter, Character character) {
+	/**
+	 * Check if already in list, if is in list, is repeated
+	*/
+    private static boolean isRepeated(List<Character> listCharacter, Character character) {
     	return listCharacter.contains(character);
     }
     
-    protected static boolean isVogal(String text) {
+	/**
+	 * Check if as vogal
+	*/
+    private static boolean isVogal(String text) {
     	return VOGALS.contains(text.toLowerCase());
     }
     
-    protected static boolean isConsonant(String text) {
+	/**
+	 * Check if as consonant
+	*/
+    private static boolean isConsonant(String text) {
     	return CONSONANTS.contains(text.toLowerCase());
     }
     

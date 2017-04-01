@@ -21,10 +21,20 @@ public class StreamImpl implements Stream {
 		this.index = 0;
 	}
 
+	/**
+	 * Get next char
+	 * 
+	 * @return next char
+	 */
 	public char getNext() {
 		return stream[index++];
 	}
 
+	/**
+	 * Verify if has a next char
+	 * 
+	 * @return if has a next char
+	 */
 	public boolean hasNext() {
 		return index < stream.length;
 	}

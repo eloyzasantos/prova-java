@@ -1,4 +1,4 @@
-# prova-java
+﻿# prova-java
 
 - Recursos necessários: Java 7+, Maven e servidor de preferência (ex. Tomcat);
 - Para gerar pacote dos Ex. 1 e 2: mvn install
@@ -54,6 +54,7 @@ Opcionais: District e complement. Demais obrigatórios.
 Response Status:<br/>
 201: Created<br/>
 400: Invalid Address or Invalid Zipcode.<br/>
+404: Address not found for this zipcode.<br/>
 
 ### /address/{id} PUT
 
