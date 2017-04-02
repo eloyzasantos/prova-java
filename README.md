@@ -135,3 +135,12 @@ Response Status:<br/>
 - Maven install gera um jar
 - Pela classe Main é possível rodar a aplicação e alterar a string de verificação.
 - No caso de String vazia, ou caractere não encontrado nas condições, é printado Element not found.
+
+## Exercício 4
+
+Resposta:
+- A url, como www.netshoes.com.br, representa um número IP de um servidor onde esta aplicação web está exposta.
+- Quando é informada uma url no browser do client, primeiro ele irá verificar se ele já possui o IP dessa url em seu cache, ou seu arquivo hosts local.
+- Caso ainda não saiba qual o ip dessa url, ele se conecta ao servidor de nomes chamado "servidor DNS".
+- Esse servidor dns reponderá a ele qual o ip correspondente dessa url.
+- Por sua vez, o client se conectará ao servidor do ip recebido, na porta padrão do serviço em questão, que no caso será a 80.
