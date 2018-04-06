@@ -139,7 +139,7 @@ Response Status:<br/>
 ## Exercício 4
 
 Resposta:
-- A url, como www.netshoes.com.br, representa um número IP de um servidor onde esta aplicação web está exposta.
+- A url, como www.google.com.br, representa um número IP de um servidor onde esta aplicação web está exposta.
 - Quando é informada uma url no browser do client, primeiro ele irá verificar se ele já possui o IP dessa url em seu cache, ou seu arquivo hosts local.
 - Caso ainda não saiba qual o ip dessa url, ele se conecta ao servidor de nomes chamado "servidor DNS".
 - Esse servidor dns reponderá a ele qual o ip correspondente dessa url.
